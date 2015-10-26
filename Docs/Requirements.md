@@ -1,9 +1,8 @@
 #Requirements
 // TODO : ##2.FR
-##1 Introduction
+##1. Introduction
 Requirements document is written statement of what the software will do. 
-Document Purpose:
-The purpose of this document is to effectively define functional and non-functional requirements. This document appears to serve as an agreement between the developers and the customers users? on what the application will do. 
+The purpose of this document is to effectively define functional and non-functional requirements. This document appears to serve as an agreement between the developers and the users on what the application will do. 
 Functional requirements describe the core functionality of the application. They will specify what software will do — e.g. the behaviour of the system from the users point of view: how the system responses to any users request. 
 Non-functional requirements will specify exactly how the system works. They will specify how the software essentially works. They cover all requirements, not considered as functional ones.
 
