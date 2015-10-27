@@ -1,2 +1,2 @@
-# hot-tickets-system
-Hot Tickets System
+# bowling-booking-system
+Bowling Booking System
