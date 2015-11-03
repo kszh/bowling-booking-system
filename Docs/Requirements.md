@@ -9,9 +9,9 @@ Non-functional requirements will specify exactly how the system works. They will
 ##2. Functional Requirements:
 Number | Description
 ---------|-------
-NFR01:| Customer can book lane for an hour at least.
-NFR02:| Customer can order integer number of hours.
-NFR03:| Customer can book several lanes and choose one that is not booked.
-NFR04:| Customer have an opportunity to select shoe size for himself and his friends (company).
-NFR05:| Customer can pay by credit card or pay by cash before game in Bowling Club. (?)
-NFR06:| System should allow book lane only when Bowling Club is open. This hours should not conflict with open-time in "Contacs". If time has changed, it changed everywhere.
+FR01:| Customer can book lane for an hour at least.
+FR02:| Customer can order integer number of hours.
+FR03:| Customer can book several lanes and choose one that is not booked.
+FR04:| Customer have an opportunity to select shoe size for himself and his friends (company).
+FR05:| Customer can pay by credit card or pay by cash before game in Bowling Club. (?)
+FR06:| System should allow book lane only when Bowling Club is open. This hours should not conflict with open-time in "Contacs". If time has changed, it changed everywhere.
