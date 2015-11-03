@@ -1,5 +1,5 @@
 #Requirements
-// TODO : ##3.Non-Functional Requirements
+
 ##1. Introduction
 Requirements document is written statement of what the software will do. 
 The purpose of this document is to effectively define functional and non-functional requirements. This document appears to serve as an agreement between the developers and the users on what the application will do. 
@@ -16,7 +16,7 @@ FR04:| Customer have an opportunity to select shoe size for himself and his frie
 FR05:| Customer can pay by credit card or pay by cash before game in Bowling Club. (?)
 FR06:| System should allow book lane only when Bowling Club is open. This hours should not conflict with open-time in "Contacs". If time has changed, it changed everywhere.
 
-##2. Non-Functional Requirements:
+##3. Non-Functional Requirements:
 Number | Description
 ---------|-------
 NFR01:| The system should support the work of 500 people at the same time.
