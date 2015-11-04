@@ -1,0 +1,27 @@
+body {
+    margin: 5px;
+}
+
+#header {
+    height: 200px;
+    background-color: bisque;
+    border: 4px double black;
+    /*position: fixed;*/
+}
+
+#menu {
+    float: left;
+    width: 200px;
+    height: 500px;
+    background-color: bisque;
+    border: 4px double black;
+}
+
+#menu > a {
+    display: block;
+    margin: 5px 30px;
+}
+
+#content {
+    float: left;
+}

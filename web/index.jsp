@@ -1,16 +1,22 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Kseniia
-  Date: 25-Oct-15
-  Time: 23:18
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-  <head>
-    <title></title>
-  </head>
-  <body>
 
-  </body>
+<html>
+    <head>
+        <title>Bowling Booking System</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    </head>
+    <body>
+        <div id="header">
+
+        </div>
+        <div id="menu">
+            <a href="index.jsp" >О нас</a>
+            <a href="" >Новости и акции</a>
+            <a href="" >Цены</a>
+            <a href="" >Контакты</a>
+        </div>
+        <div id="content">
+            Bowling Booking System
+        </div>
+    </body>
 </html>
