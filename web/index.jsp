@@ -7,7 +7,9 @@
     </head>
     <body>
         <div id="header">
-
+            <%--<a href="index.jsp" id="logo"> <img src="/images/bowling_logo.jpg" alt="logo"></a>--%>
+            <a href="/login" style="padding-left: 950px; padding-right: 100px">Войти</a>
+            <a href="/registration" >Зарегистрироваться</a>
         </div>
         <div id="menu">
             <a href="index.jsp" >О нас</a>
