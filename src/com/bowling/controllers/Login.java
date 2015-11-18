@@ -1,10 +1,10 @@
-package main.java.com.bowling.controllers;
+package com.bowling.controllers;
 
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping(value = "/registration")
+@RequestMapping(value = "/login")
 public class Login {
 }
