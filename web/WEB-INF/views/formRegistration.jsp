@@ -63,6 +63,7 @@
                 </tr>
                 <!--<input type="checkbox" name="flag1" value="agree">I agree
                 <input type="submit" name="submit" value = "Зарегистрироваться"> -->
+        </table>
         </form>
     </div>
 </body>
