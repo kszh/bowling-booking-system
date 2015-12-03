@@ -8,7 +8,7 @@
     <jsp:include page="../menu.jsp" ></jsp:include>
 
     <div id="content">
-        <form name="Authorization">
+        <form name="Authorization" method="post">
             <table border = "0" cellspacing="5" cellpadding = "5">
                 <caption> Форма авторизации</caption>
                 <tr>
