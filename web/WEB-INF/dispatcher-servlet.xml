@@ -11,10 +11,11 @@
 
     <context:component-scan base-package="com.bowling.controllers"/>
     <context:component-scan base-package="com.bowling.dao"/>
+    <context:component-scan base-package="com.bowling.services"/>
 
     <mvc:resources mapping="/resources/**" location="/resources/"/>
     <mvc:annotation-driven/>
-    <!--<mvc:view-controller path="/registration" view-name="registrationSuccess"/>-->
+
     <!--<context:annotation-config/>-->
 
     <bean id="viewResolver"
@@ -27,7 +28,7 @@
         <property name="dataSource" ref="dataSource"/>
     </bean>
 
-    <context:property-placeholder location="jdbc.properties"/>
+    <context:property-placeholder location="/resources/jdbc.properties"/>
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="${jdbc.driverClassName}"/>
@@ -36,9 +37,4 @@
         <property name="password" value="${jdbc.password}"/>
     </bean>
 
-    <!--<bean id="bundleViewResolver"-->
-          <!--class="org.springframework.web.servlet.view.ResourceBundleViewResolver">-->
-        <!--<property name="order" value="1"></property>-->
-        <!--<property name="basename" value="views"></property>-->
-    <!--</bean>-->
 </beans>
