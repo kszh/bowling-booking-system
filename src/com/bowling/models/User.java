@@ -4,6 +4,7 @@ public class User {
     private int id;
     private String login;
     private String password;
+    private String passwordRepeat;
     private String name;
     private String surname;
     private String email;
@@ -18,6 +19,9 @@ public class User {
     };
     public String getPassword() {
         return password;
+    }
+    public String getPasswordRepeat() {
+        return passwordRepeat;
     }
     public String getName() {
         return name;
@@ -44,6 +48,9 @@ public class User {
     public void setPassword(String newPassword) {
         password = newPassword;
     }
+    public void setPasswordRepeat(String passwordRepeat) {
+        this.passwordRepeat = passwordRepeat;
+    }
     public void setName(String newName) {
         name = newName;
     }
@@ -62,7 +69,8 @@ public class User {
 
     public String toString() {
         return "id=" + id + " login=" + login + " password=" + password +
-                " name=" + name + " surname=" + surname + " email=" + email +
+                " password confirmation=" + passwordRepeat + " name=" + name +
+                " surname=" + surname + " email=" + email +
                 " phone=" + phone + " foot size=" + foot_size;
     }
 
