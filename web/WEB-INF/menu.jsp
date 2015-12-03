@@ -9,5 +9,5 @@
         <a href="<c:url value="/"/>" >О нас</a>
         <a href="" >Новости и акции</a>
         <a href="" >Цены</a>
-        <a href="" >Контакты</a>
+        <a href="<c:url value="/contacts"/>" >Контакты</a>
     </div>
