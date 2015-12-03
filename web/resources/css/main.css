@@ -6,7 +6,7 @@ body {
     height: 200px;
     background-color: bisque;
     border: 4px double black;
-    background-image: url(../images/bowling_logo.jpg);
+    background-image: url(../images/bowling_logo.png);
     background-repeat: no-repeat;
     background-position: left top;
     background-size: contain;
@@ -16,7 +16,7 @@ body {
 #menu {
     float: left;
     width: 200px;
-    height: 500px;
+    height: 750px;
     background-color: bisque;
     border: 4px double black;
 }
