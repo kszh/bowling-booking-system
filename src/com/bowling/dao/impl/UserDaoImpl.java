@@ -5,6 +5,7 @@ import com.bowling.dao.interfaces.UserDao;
 import com.bowling.models.UserFormRegistration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Repository;
 
 @Repository("userDao")
@@ -20,8 +21,9 @@ public class UserDaoImpl implements UserDao {
     @Override
     public void update(final UserFormRegistration user) {
         System.out.println("in user dao");
+
         jdbcTemplate.update(INSERT_USER,
-                user.getLogin(), user.getPassword(), user.getName(), user.getSurname(),
+                user.getLogin(), new BCryptPasswordEncoder().encode(user.getPassword()), user.getName(), user.getSurname(),
                 user.getEmail(), user.getPhone(), user.getFoot_size());
     }
 }

@@ -1,7 +1,7 @@
 CREATE DATABASE booking;
 USE booking;
 CREATE TABLE users (id BIGINT NOT NULL AUTO_INCREMENT, username CHAR(25) NOT NULL, #TODO: password encrypt
-    password CHAR(20) NOT NULL, name CHAR(20) NOT NULL, surname CHAR(20) NOT NULL,
+    password CHAR(70) NOT NULL, name CHAR(20) NOT NULL, surname CHAR(20) NOT NULL,
     email CHAR(40) NOT NULL, phone CHAR(12) NOT NULL, foot_size int NOT NULL,
     user_role_id INT NOT NULL DEFAULT 1, PRIMARY KEY (id), UNIQUE (username),
     FOREIGN KEY (user_role_id) REFERENCES user_roles(id) ON DELETE CASCADE);
