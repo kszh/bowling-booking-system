@@ -1,9 +1,10 @@
 CREATE DATABASE booking;
 USE booking;
-CREATE TABLE users (id BIGINT NOT NULL AUTO_INCREMENT, login CHAR(25) NOT NULL,
+CREATE TABLE users (id BIGINT NOT NULL AUTO_INCREMENT, username CHAR(25) NOT NULL, #TODO: password encrypt
     password CHAR(20) NOT NULL, name CHAR(20) NOT NULL, surname CHAR(20) NOT NULL,
     email CHAR(40) NOT NULL, phone CHAR(12) NOT NULL, foot_size int NOT NULL,
-    PRIMARY KEY (id));
+    user_role_id INT NOT NULL DEFAULT 1, PRIMARY KEY (id), UNIQUE (username),
+    FOREIGN KEY (user_role_id) REFERENCES user_roles(id) ON DELETE CASCADE);
 CREATE TABLE prices (id BIGINT NOT NULL AUTO_INCREMENT, day CHAR(3) NOT NULL,
     time CHAR(5) NOT NULL, prise INT NOT NULL, PRIMARY KEY (id));
 CREATE TABLE news (id BIGINT NOT NULL AUTO_INCREMENT, header CHAR (50) NOT NULL,
@@ -19,3 +20,4 @@ CREATE TABLE orders (id BIGINT NOT NULL AUTO_INCREMENT, FOREIGN KEY (id_user) RE
     count INT NOT NULL, players_names TEXT NOT NULL, players_footsize TEXT NOT NULL,
     count_lain INT NOT NULL, data DATE NOT NULL, start_time TEXT NOT NULL,
     end_time TEXT NOT NULL, PRIMARY KEY (id));
+CREATE TABLE user_roles (id BIGINT NOT NULL AUTO_INCREMENT, role CHAR(20), UNIQUE(role), PRIMARY KEY (id));

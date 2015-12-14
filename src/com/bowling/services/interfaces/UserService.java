@@ -1,8 +1,8 @@
 package com.bowling.services.interfaces;
 
-import com.bowling.models.User;
+import com.bowling.models.UserFormRegistration;
 
 public interface UserService {
 
-    void update(User user);
+    void update(UserFormRegistration user);
 }

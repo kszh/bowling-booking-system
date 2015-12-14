@@ -1,9 +1,5 @@
 package com.bowling.controllers;
 
-
-import com.bowling.models.User;
-import com.bowling.services.interfaces.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,19 +8,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class Login {
 
-    @Autowired
-    private UserService userService;
-
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String viewLoginPage(Model model) throws Exception {
         System.out.println("in view login controller");
         return "loginPage";
     }
 
-    @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public String processLoginPage(User user) throws Exception {
-        System.out.println("in process login controller");
-        userService.update(user);
-        return "mainPage";
-    }
 }
