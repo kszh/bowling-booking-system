@@ -7,7 +7,7 @@
     </style>
     <div class="menu" id="menu">
         <a href="<c:url value="/"/>" >О нас</a>
-        <a href="" >Новости и акции</a>
-        <a href="" >Цены</a>
+        <a href="<c:url value="/prices"/>" >Цены</a>
         <a href="<c:url value="/contacts"/>" >Контакты</a>
+        <a href="<c:url value="/news"/>" >Новости и акции</a>
     </div>
