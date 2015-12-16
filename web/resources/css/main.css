@@ -13,12 +13,34 @@ body {
     /*position: fixed;*/
 }
 
+#header > * {
+    background-color: #C7BAEF;
+    float: right;
+    padding: 10px;
+    margin: 15px;
+    margin-left: 0;
+    border-radius: 10px;
+}
+
+#header > a:hover {
+    background-color: #A595C5;
+    color: white;
+}
+
+#header > p {
+    background-color: transparent;
+}
+
+#header > p > span {
+    text-decoration-line: underline;
+}
+
 #menu {
     float: left;
-    width: 200px;
-    height: 750px;
+    height:750px;
     background-color: bisque;
     border: 4px double black;
+    width: 20%;
 }
 
 #menu > a {
