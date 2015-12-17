@@ -71,5 +71,7 @@
         </table>
         </form:form>
     </div>
+
+    <jsp:include page="../footer.jsp" ></jsp:include>
 </body>
 </html>
