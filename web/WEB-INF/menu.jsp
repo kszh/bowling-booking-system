@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://www.springframework.org/tags" %>
 
-    <div class="menu" id="menu">
+    <div id="menu">
         <a href="<c:url value="/"/>" >О нас</a>
         <a href="<c:url value="/prices"/>" >Цены</a>
         <a href="<c:url value="/contacts"/>" >Контакты</a>

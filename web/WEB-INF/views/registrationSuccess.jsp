@@ -5,5 +5,6 @@
     <jsp:include page="../header.jsp" ></jsp:include>
     <jsp:include page="../menu.jsp" ></jsp:include>
 Your registration is successful!
+    <jsp:include page="../footer.jsp" ></jsp:include>
 </body>
 </html>

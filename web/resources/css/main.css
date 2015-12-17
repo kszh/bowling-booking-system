@@ -1,53 +1,104 @@
 body {
-    margin: 5px;
+    margin: 0;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
 }
 
+
 #header {
-    height: 200px;
-    background-color: bisque;
-    border: 4px double black;
-    background-image: url(../images/bowling_logo.png);
+    background-color: rgba(216, 215, 255, 0.3);
+    height: 102px;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+#header .logo {
+    cursor: pointer;
+    float: left;
+    height: 102px;
+    width: 220px;
+    border-radius: 20px;
+    background-image: url(../images/cool_logo.png);
     background-repeat: no-repeat;
     background-position: left top;
     background-size: contain;
-    /*position: fixed;*/
 }
 
-#header > * {
-    background-color: #C7BAEF;
+#header .header-content {
     float: right;
+    margin: 0 15px;
+}
+
+#header .header-content > * {
+    background-color: #C7BAEF;
     padding: 10px;
     margin: 15px;
     margin-left: 0;
     border-radius: 10px;
+    line-height: 50px;
 }
 
-#header > a:hover {
+#header .header-content > a:hover {
     background-color: #A595C5;
     color: white;
 }
 
-#header > p {
+#header .header-content > p {
     background-color: transparent;
+    display: inline-block;
 }
 
-#header > p > span {
+#header .header-content > p > span {
     text-decoration-line: underline;
 }
 
+
+#content {
+    width: 75%;
+    float: left;
+}
+
+#content .pic1 {
+    margin-left: 40px;
+}
+
+#content .pic2 {
+    margin-left: 60px;
+}
+
+
 #menu {
     float: left;
-    height:750px;
-    background-color: bisque;
-    border: 4px double black;
-    width: 20%;
+    height: 750px;
+    width: 190px;
+    background-color: rgb(236, 225, 239);
+    border-radius: 20px;
+    margin: 0 15px;
+    padding: 15px;
 }
 
 #menu > a {
     display: block;
-    margin: 5px 30px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
 }
 
-#content {
+#menu > a:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+
+
+#footer {
+    width: 98%;
+    height: 50px;
+    line-height: 50px;
+    color: gainsboro;
+    background-color: rgba(84, 20, 20, 0.2);
+    border-radius: 20px;
+    margin: 15px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: small;
     float: left;
 }
