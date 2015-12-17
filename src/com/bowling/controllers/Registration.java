@@ -23,7 +23,7 @@ public class Registration {
         return "formRegistration";
     }
 
-    // TODO: registration validation, password encrypt, send email
+    // TODO: registration validation, send email
     @RequestMapping(value = "/registration", method = RequestMethod.POST)
     public String processRegistration(@ModelAttribute("user") UserFormRegistration user) {
         userService.update(user);

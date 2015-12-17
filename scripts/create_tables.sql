@@ -1,6 +1,6 @@
 CREATE DATABASE booking;
 USE booking;
-CREATE TABLE users (id BIGINT NOT NULL AUTO_INCREMENT, username CHAR(25) NOT NULL, #TODO: password encrypt
+CREATE TABLE users (id BIGINT NOT NULL AUTO_INCREMENT, username CHAR(25) NOT NULL,
     password CHAR(70) NOT NULL, name CHAR(20) NOT NULL, surname CHAR(20) NOT NULL,
     email CHAR(40) NOT NULL, phone CHAR(12) NOT NULL, foot_size int NOT NULL,
     user_role_id INT NOT NULL DEFAULT 1, PRIMARY KEY (id), UNIQUE (username),
@@ -13,11 +13,14 @@ CREATE TABLE news (id BIGINT NOT NULL AUTO_INCREMENT, header CHAR (50) NOT NULL,
 CREATE TABLE filiation (id BIGINT NOT NULL AUTO_INCREMENT, adress CHAR(100) NOT NULL,
     PRIMARY KEY (id));
 CREATE TABLE filiation_phone (id BIGINT NOT NULL AUTO_INCREMENT,
-    number CHAR(20) NOT NULL, FOREIGN KEY (id_fil) REFERENCES filiation (id) BIGINT NOT NULL, PRIMARY KEY (id));
+    number CHAR(20) NOT NULL, id_fil BIGINT NOT NULL,
+    FOREIGN KEY (id_fil) REFERENCES filiation (id), PRIMARY KEY (id));
 CREATE TABLE descriptions (id BIGINT NOT NULL AUTO_INCREMENT,
     title CHAR(20), text TEXT, PRIMARY KEY (id));
-CREATE TABLE orders (id BIGINT NOT NULL AUTO_INCREMENT, FOREIGN KEY (id_user) REFERENCES users (id) BIGINT NOT NULL,
+CREATE TABLE orders (id BIGINT NOT NULL AUTO_INCREMENT, id_user BIGINT NOT NULL,
+    FOREIGN KEY (id_user) REFERENCES users (id) ,
     count INT NOT NULL, players_names TEXT NOT NULL, players_footsize TEXT NOT NULL,
-    count_lain INT NOT NULL, data DATE NOT NULL, start_time TEXT NOT NULL,
+    data DATE NOT NULL, start_time TEXT NOT NULL,
     end_time TEXT NOT NULL, PRIMARY KEY (id));
-CREATE TABLE user_roles (id BIGINT NOT NULL AUTO_INCREMENT, role CHAR(20), UNIQUE(role), PRIMARY KEY (id));
+CREATE TABLE user_roles (id BIGINT NOT NULL AUTO_INCREMENT,
+    role CHAR(20), UNIQUE(role), PRIMARY KEY (id));
