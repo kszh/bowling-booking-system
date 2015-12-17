@@ -9,7 +9,7 @@ public class UserFormRegistration {
     private String surname;
     private String email;
     private String phone;
-    private int foot_size;
+    private int footSize;
 
     public int getId() {
         return id;
@@ -45,10 +45,6 @@ public class UserFormRegistration {
 
     public String getPhone() {
         return phone;
-    }
-
-    public int getFoot_size() {
-        return foot_size;
     }
 
     public void setId(int newId) {
@@ -87,16 +83,19 @@ public class UserFormRegistration {
         phone = newPhone;
     }
 
-    public void setFoot_size(int newFoot_size) {
-        foot_size = newFoot_size;
-    }
-
     public String toString() {
         return "id=" + id + " login=" + login + " password=" + password +
                 " password confirmation=" + passwordRepeat + " name=" + name +
                 " surname=" + surname + " email=" + email +
-                " phone=" + phone + " foot size=" + foot_size;
+                " phone=" + phone + " foot size=" + footSize;
     }
 
 
+    public int getFootSize() {
+        return footSize;
+    }
+
+    public void setFootSize(int footSize) {
+        this.footSize = footSize;
+    }
 }

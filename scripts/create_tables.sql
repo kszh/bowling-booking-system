@@ -19,7 +19,7 @@ CREATE TABLE descriptions (id BIGINT NOT NULL AUTO_INCREMENT,
     title CHAR(20), text TEXT, PRIMARY KEY (id));
 CREATE TABLE orders (id BIGINT NOT NULL AUTO_INCREMENT, id_user BIGINT NOT NULL,
     FOREIGN KEY (id_user) REFERENCES users (id) ,
-    count INT NOT NULL, players_names TEXT NOT NULL, players_footsize TEXT NOT NULL,
+    count INT NOT NULL, players_footsize TEXT NOT NULL,
     data DATE NOT NULL, start_time TEXT NOT NULL,
     end_time TEXT NOT NULL, PRIMARY KEY (id));
 CREATE TABLE user_roles (id BIGINT NOT NULL AUTO_INCREMENT,

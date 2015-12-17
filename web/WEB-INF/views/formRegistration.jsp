@@ -45,7 +45,7 @@
                     <td align="right" valign="top"></td>
                     <td>
                         Размер обуви:<br>
-                        <form:select path="foot_size">
+                        <form:select path="footSize">
                             <option value = "36">36
                             <option value = "36">37
                             <option value = "36">38

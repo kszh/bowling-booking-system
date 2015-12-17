@@ -1,6 +1,7 @@
 package com.bowling.services.impl;
 
 import com.bowling.dao.interfaces.UserDao;
+import com.bowling.models.UserFormBooking;
 import com.bowling.models.UserFormRegistration;
 import com.bowling.services.interfaces.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,4 +18,10 @@ public class UserServiceImpl implements UserService {
         System.out.println("in user service");
         userDao.update(user);
     }
+
+    @Override
+    public void bookingLane(UserFormBooking user) {
+        userDao.bookingLane(user);
+    }
+
 }
