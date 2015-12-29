@@ -95,7 +95,8 @@ public class UserFormRegistration {
         return footSize;
     }
 
-    public void setFootSize(int footSize) {
-        this.footSize = footSize;
-    }
+    //public void setFootSize(int footSize) {
+       // this.footSize = footSize;
+  //  }
+    public void setFootSize(int newfootSize) {footSize = newfootSize;}
 }
